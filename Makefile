@@ -12,7 +12,11 @@ list:
 no_targets__:
 
 # install all dependencies (do not forget to create a virtualenv first)
+# for ubuntu, install:
+# sudo apt-get install libfreetype6-dev build-essential gfortran libatlas-base-dev python-dev
 setup:
+	@pip install numpy
+	@pip install scipy
 	@pip install -U -e .\[tests\]
 
 # test your application (tests in the tests/ directory)

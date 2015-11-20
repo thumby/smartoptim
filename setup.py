@@ -22,6 +22,8 @@ tests_require = [
     'coveralls',
     'sphinx',
     'flake8',
+    'octopus-http',
+    'pillow',
 ]
 
 setup(

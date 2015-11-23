@@ -24,6 +24,7 @@ tests_require = [
     'flake8',
     'octopus-http',
     'pillow',
+    'thumbor',
 ]
 
 setup(

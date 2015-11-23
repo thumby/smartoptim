@@ -15,8 +15,10 @@ no_targets__:
 # for ubuntu, install:
 # sudo apt-get install libfreetype6-dev build-essential gfortran libatlas-base-dev python-dev
 setup:
-	@pip install numpy
+	@pip install Cython==0.22
+	@pip install numpy==1.9.2
 	@pip install scipy
+	@pip install https://github.com/scikit-image/scikit-image/archive/master.zip
 	@pip install -U -e .\[tests\]
 
 # test your application (tests in the tests/ directory)
